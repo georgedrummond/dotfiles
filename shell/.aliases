@@ -3,6 +3,7 @@
 #
 # Workflow
 #
+alias v='vim .'
 alias cdc='cd ~/code'
 alias cdd='cd ~/dotfiles'
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
