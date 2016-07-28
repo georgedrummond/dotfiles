@@ -1,0 +1,41 @@
+#!/bin/sh
+
+#
+# Workflow
+#
+alias cdc='cd ~/code'
+alias cdd='cd ~/dotfiles'
+alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+
+#
+# Tmux
+#
+alias tmux='TERM=xterm-256color tmux'
+
+#
+# Ruby
+#
+alias be='rbenv exec bundle exec'
+alias br='rbenv exec bundle exec rspec'
+alias bc='rbenv exec bundle exec rails console'
+
+#
+# Git
+#
+alias gcm='git commit -m'
+alias gnb='git checkout -b'
+alias guc='git reset --soft HEAD~1'
+
+gsq() { git rebase -i HEAD~"$@" }
+
+#
+# React Native
+#
+alias rn='react-native'
+alias rios='react-native run-ios'
+alias rdroid='react-native run-android'
+
+#
+# Ionic
+#
+alias is='ionic serve'

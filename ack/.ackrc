@@ -1,0 +1,15 @@
+#
+# Formatting output
+#
+--after-context=2
+--before-context=2
+--pager=less -R
+
+#
+# Ignoring directories
+#
+--ignore-directory=log/
+--ignore-directory=platforms/
+--ignore-directory=plugins/
+--ignore-directory=www/dist/
+--ignore-directory=www/lib/
