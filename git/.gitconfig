@@ -19,6 +19,7 @@
 	s = status
 [core]
 	editor = vim
+	excludesfile = /Users/georgedrummond/.gitignore-global
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
