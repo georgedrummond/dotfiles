@@ -2,7 +2,7 @@
 brew 'ack'
 brew 'android-sdk'
 brew 'ant'
-brew 'docker'
+# brew 'docker'
 brew 'elasticsearch'
 brew 'elixir'
 brew 'nmap'
