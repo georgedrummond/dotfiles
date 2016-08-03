@@ -13,6 +13,7 @@ brew bundle
 #
 stow ack
 stow bash
+stow git
 stow pow
 stow shell
 stow tmux
