@@ -24,6 +24,7 @@ alias bc='rbenv exec bundle exec rails console'
 #
 # Git
 #
+alias gh='github .'
 alias gcm='git commit -m'
 alias gnb='git checkout -b'
 alias guc='git reset --soft HEAD~1'
