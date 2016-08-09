@@ -17,6 +17,7 @@ alias tmux='TERM=xterm-256color tmux'
 #
 # Ruby
 #
+alias bb='rbenv exec bundle install'
 alias be='rbenv exec bundle exec'
 alias br='rbenv exec bundle exec rspec'
 alias bc='rbenv exec bundle exec rails console'
