@@ -1,4 +1,4 @@
 export HOME=/Users/georgedrummond
-export RBENV_ROOT=/usr/local/var/rbenv
 export PATH="/usr/local/opt/rbenv/shims:/usr/local/opt/rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
