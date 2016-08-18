@@ -43,3 +43,8 @@ alias rdroid='react-native run-android'
 # Ionic
 #
 alias is='ionic serve'
+
+#
+# Work
+#
+alias tt='cd ~/code/ios/timesheets'
