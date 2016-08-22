@@ -18,9 +18,16 @@ alias tmux='TERM=xterm-256color tmux'
 # Ruby
 #
 alias bb='rbenv exec bundle install'
-alias be='rbenv exec bundle exec'
-alias br='rbenv exec bundle exec rspec'
 alias bc='rbenv exec bundle exec rails console'
+alias be='rbenv exec bundle exec'
+alias bq='rbenv exec bundle exec sidekiq'
+alias br='rbenv exec bundle exec rspec'
+alias bs='rbenv exec bundle exec rails server'
+
+#
+# Phoenix/Elixir
+#
+alias eps='mix phoenix.server'
 
 #
 # Git
