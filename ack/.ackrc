@@ -14,3 +14,4 @@
 --ignore-directory=www/dist/
 --ignore-directory=www/lib/
 --ignore-file=is:templates.js
+--ignore-directory=tmp
