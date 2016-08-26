@@ -5,6 +5,7 @@
 [user]
 	email = georgedrummond@gmail.com
 	name = George Drummond
+	signingkey = D8D158DD
 [push]
 	default = current
 [merge]
