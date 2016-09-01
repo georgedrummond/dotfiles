@@ -11,8 +11,9 @@
 --ignore-directory=log/
 --ignore-directory=platforms/
 --ignore-directory=plugins/
+--ignore-directory=tmp
 --ignore-directory=www/dist/
 --ignore-directory=www/lib/
---ignore-file=is:templates.js
+--ignore-directory=coverage
 --ignore-file=ext:svg
---ignore-directory=tmp
+--ignore-file=is:templates.js
