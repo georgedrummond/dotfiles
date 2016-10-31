@@ -82,7 +82,7 @@ let g:indentLine_char = '.'
 let g:ctrlp_custom_ignore = 'node_modules\|plugins\|platforms\|www\/lib\|www\/dist\|vim\/bundle\|coverage'
 let mapleader = "\<Space>"
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.swp$', 'dist', 'vendor', '\.git$']
+let NERDTreeIgnore = ['\.swp$', 'coverage', 'dist', 'vendor', '\.git$']
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
