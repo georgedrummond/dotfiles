@@ -9,7 +9,7 @@
 [push]
 	default = current
 [merge]
-	ff = false
+	ff = true
 [branch]
 	autosetuprebase = always
 	autosetupmerge = true
