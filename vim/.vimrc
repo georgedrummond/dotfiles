@@ -31,6 +31,7 @@ Plugin 'terryma/vim-smooth-scroll'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'rhysd/vim-crystal'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
