@@ -94,6 +94,7 @@ map \ :GitGutterToggle<cr>
 map bd :bd<cr>
 map bn :bn<cr>
 map bp :bp<cr>
+map bq :bufdo bd<cr>
 map br :CtrlPClearCache<cr>
 map tt :NERDTreeToggle<cr>
 
