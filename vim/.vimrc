@@ -23,15 +23,16 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mru.vim'
+Plugin 'junegunn/goyo.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'reedes/vim-pencil'
+Plugin 'rhysd/vim-crystal'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-pasta'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'rhysd/vim-crystal'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -97,6 +98,7 @@ map bp :bp<cr>
 map bq :bufdo bd<cr>
 map br :CtrlPClearCache<cr>
 map tt :NERDTreeToggle<cr>
+map df :Goyo<cr>
 
 noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
