@@ -61,6 +61,7 @@ augroup pencil
 augroup END
 
 set guifont=Menlo\ Regular:h15
+set laststatus=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
