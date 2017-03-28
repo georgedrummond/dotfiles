@@ -36,6 +36,7 @@ alias eps='mix phoenix.server'
 alias gh='github .'
 alias gap='git add -p'
 alias gcm='git commit -m'
+alias gcms='git commit -S -m'
 alias gnb='git checkout -b'
 alias guc='git reset --soft HEAD~1'
 
