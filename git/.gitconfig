@@ -8,6 +8,7 @@
 	signingkey = D8D158DD
 [push]
 	default = current
+	followTags = true
 [merge]
 	ff = true
 [branch]
@@ -31,3 +32,5 @@
 	required = true
 [gpg]
 	program = gpg2
+[commit]
+	gpgsign = true
