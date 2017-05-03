@@ -31,7 +31,7 @@ root: ~/code
 # post: tmux -CC attach -t buildingblok
 
 windows:
-  - bb:
+  - buildingblok:
       layout: even-horizontal
       pre: cd BuildingBlokApps
       panes:
