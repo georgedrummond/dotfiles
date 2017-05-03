@@ -1,6 +1,6 @@
 # brew 'docker'
 brew 'ack'
-brew 'android-sdk'
+# brew 'android-sdk'
 brew 'ant'
 brew 'elasticsearch'
 brew 'elixir'

@@ -17,6 +17,7 @@ stow git
 stow pow
 stow shell
 stow tmux
+stow tmuxinator
 stow vim
 stow zsh
 
@@ -32,6 +33,11 @@ mkdir ~/.iterm
 git clone https://github.com/dracula/iterm.git ~/.iterm/dracula
 
 #
+#
+# Install tmuxinator
+#
+gem install tmuxinator
+
 # Install vundle
 #
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
