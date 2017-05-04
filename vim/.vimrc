@@ -72,11 +72,19 @@ set hlsearch
 set lazyredraw
 set wildignore+=*/tmp/*,*./git*,*/node_modules/*
 
-syntax enable
 color dracula
 
-highlight CursorLine ctermbg=235 ctermfg=NONE
-highlight CursorLineNR ctermbg=235 ctermfg=white
+syntax enable
+
+highlight CursorLine ctermbg=235
+highlight CursorLineNR ctermbg=235
+
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+  set t_ut=
+endif
 
 let g:airline#extensions#tabline#enabled = 1
 let g:gitgutter_enabled = 0
@@ -105,4 +113,5 @@ noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
 noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
 noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
 noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+
 
