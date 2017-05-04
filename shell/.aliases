@@ -3,7 +3,7 @@
 #
 # Workflow
 #
-alias v='vim .'
+v() { vim $@ }
 alias cdc='cd ~/code'
 alias cdd='cd ~/dotfiles'
 alias cdh='cd ~'
