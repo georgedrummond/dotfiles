@@ -78,6 +78,7 @@ syntax enable
 
 highlight CursorLine ctermbg=235
 highlight CursorLineNR ctermbg=235
+highlight Normal guibg=NONE ctermbg=NONE
 
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
