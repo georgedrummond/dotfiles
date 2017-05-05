@@ -1,3 +1,4 @@
+set -e
 #
 # Install homebrew and dependencies
 #
@@ -11,7 +12,7 @@ brew bundle
 #
 # Set default gems for rbenv
 #
-ln -s ~/dotfiles/rbenv/default-gems $(rbenv root)/default-gems
+ln -sf ~/dotfiles/rbenv/default-gems $(rbenv root)/default-gems
 
 #
 # Symlink all dotfiles
@@ -19,7 +20,7 @@ ln -s ~/dotfiles/rbenv/default-gems $(rbenv root)/default-gems
 stow ack
 stow bash
 stow git
-jtow pow
+stow pow
 stow shell
 stow tmux
 stow tmuxinator
@@ -29,13 +30,17 @@ stow zsh
 #
 # Install oh-my-zsh
 #
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+if [ ! -e ~/.oh-my-zsh ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 #
 # Dracula theme for iterm2
 #
-mkdir ~/.iterm
-git clone https://github.com/dracula/iterm.git ~/.iterm/dracula
+mkdir -p ~/.iterm
+if [ ! -e ~/.iterm/dracula ]; then
+  git clone https://github.com/dracula/iterm.git ~/.iterm/dracula
+fi
 
 #
 #
@@ -45,6 +50,8 @@ gem install tmuxinator
 
 # Install vundle
 #
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -e ~/.vim/bundle/Vundle.vim ]; then
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 vim -c ":PluginInstall!" -c ":qa!" ~/.vimrc
 
