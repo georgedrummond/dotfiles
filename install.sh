@@ -9,12 +9,17 @@ brew tap homebrew/bundle
 brew bundle
 
 #
+# Set default gems for rbenv
+#
+ln -s ~/dotfiles/rbenv/default-gems $(rbenv root)/default-gems
+
+#
 # Symlink all dotfiles
 #
 stow ack
 stow bash
 stow git
-stow pow
+jtow pow
 stow shell
 stow tmux
 stow tmuxinator
