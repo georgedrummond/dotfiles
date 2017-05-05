@@ -35,13 +35,13 @@ windows:
       layout: even-horizontal
       pre: cd BuildingBlokApps
       panes:
-        - v
+        - vim .
         - clear
   - timesheets:
       layout: even-horizontal
       pre: cd ios/timesheets
       panes:
-        - v
+        - vim .
         - clear
   - geoservice:
       layout: even-horizontal
