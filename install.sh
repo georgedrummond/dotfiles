@@ -21,6 +21,7 @@ stow ack
 stow bash
 stow git
 stow pow
+stow ruby
 stow shell
 stow tmux
 stow tmuxinator
