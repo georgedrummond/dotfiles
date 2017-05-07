@@ -86,3 +86,5 @@ export EDITOR='vim'
 
 eval "$(rbenv init -)"
 
+
+export PATH="$HOME/.yarn/bin:$PATH"
