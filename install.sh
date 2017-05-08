@@ -59,10 +59,14 @@ PrettyOutput() {
 # Dracula theme for iterm2
 #
 
+    Running "Making iterm styles directory"
     mkdir -p ~/.iterm
+
     if [ ! -e ~/.iterm/dracula ]; then
+      Running "Installing iterm dracula theme"
       git clone https://github.com/dracula/iterm.git ~/.iterm/dracula | PrettyOutput
     else
+      Running "Updating iterm dracula theme"
       cd ~/.iterm/dracula && git pull | PrettyOutput
     fi
 
@@ -83,4 +87,6 @@ PrettyOutput() {
     else
       cd ~/.vim/bundle/Vundle.vim && git pull | PrettyOutput
     fi
+
+    Running "vimrc :PluginInstall"
     vim -c ":PluginInstall!" -c ":qa!" ~/.vimrc
