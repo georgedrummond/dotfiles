@@ -8,10 +8,12 @@ PrettyOutput() {
   sed 's/^/      /' $1
 }
 
+#
 # Install homebrew and dependencies
+#
 
     if ! type "brew" > /dev/null; then
-      echo "* Installing homebrew"
+      Running "Installing homebrew"
       /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
 
@@ -19,7 +21,7 @@ PrettyOutput() {
     brew tap homebrew/bundle | PrettyOutput
 
     Running "Installing Homebrew Packages"
-    brew bundle | PrettyOutput #sed 's/^/      /'
+    brew bundle | PrettyOutput
 
 #
 # Set default gems for rbenv
