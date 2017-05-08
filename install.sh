@@ -59,9 +59,9 @@ PrettyOutput() {
 
     mkdir -p ~/.iterm
     if [ ! -e ~/.iterm/dracula ]; then
-      git clone https://github.com/dracula/iterm.git ~/.iterm/dracula
+      git clone https://github.com/dracula/iterm.git ~/.iterm/dracula | PrettyOutput
     else
-      cd ~/.iterm/dracula && git pull
+      cd ~/.iterm/dracula && git pull | PrettyOutput
     fi
 
 #
@@ -75,9 +75,10 @@ PrettyOutput() {
 # Install vundle
 #
 
+    Running "Install vundle"
     if [ ! -e ~/.vim/bundle/Vundle.vim ]; then
-      git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+      git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim | PrettyOutput
     else
-      cd ~/.vim/bundle/Vundle.vim && git pull
+      cd ~/.vim/bundle/Vundle.vim && git pull | PrettyOutput
     fi
     vim -c ":PluginInstall!" -c ":qa!" ~/.vimrc
