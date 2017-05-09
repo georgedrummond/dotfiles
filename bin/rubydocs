@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# Open up docs for gem on rubydoc.info
+#
+# Example usage:
+#   rubydoc rails
+#   rubydoc stripe
+#
+
+if [ $# -eq 0 ]
+then
+  echo "Example usage:"
+  echo "  rubydoc rails"
+  echo "  rubydoc stripe"
+else
+  open "http://www.rubydoc.info/gems/$1"
+fi
