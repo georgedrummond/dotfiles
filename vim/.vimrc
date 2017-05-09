@@ -17,22 +17,19 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'dracula/vim'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'fatih/vim-go'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mru.vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'mxw/vim-jsx'
 Plugin 'reedes/vim-pencil'
-Plugin 'rhysd/vim-crystal'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-pasta'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -71,7 +68,6 @@ set fillchars+=vert:\ " comment after to preserve whitespace
 set hlsearch
 set lazyredraw
 set wildignore+=*/tmp/*,*./git*,*/node_modules/*
-set conceallevel=0
 
 color dracula
 
@@ -96,6 +92,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|plugins\|platforms\|www\/lib\|www\/di
 let mapleader = "\<Space>"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', 'coverage', 'dist', 'vendor', '\.git$']
+let g:vim_json_syntax_conceal = 0
 
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
