@@ -71,6 +71,7 @@ set fillchars+=vert:\ " comment after to preserve whitespace
 set hlsearch
 set lazyredraw
 set wildignore+=*/tmp/*,*./git*,*/node_modules/*
+set conceallevel=0
 
 color dracula
 
