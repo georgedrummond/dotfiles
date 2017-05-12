@@ -1,6 +1,11 @@
 #!/bin/sh
 
 #
+# Set default editor
+#
+export EDITOR='vim'
+
+#
 # Ruby
 #
 export RBENV_ROOT=/usr/local/var/rbenv
@@ -15,4 +20,3 @@ export TERM=xterm-256color
 #
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools
-

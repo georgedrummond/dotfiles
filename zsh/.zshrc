@@ -47,10 +47,12 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git rails ruby)
 
-# User configuration
+# Set paths
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/dotfiles/bin:$PATH
+export PATH="$HOME/.yarn/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -69,7 +71,6 @@ source ~/.completion/rubydoc.zsh
 # else
 #   export EDITOR='mvim'
 # fi
-export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -88,5 +89,3 @@ export EDITOR='vim'
 
 eval "$(rbenv init -)"
 
-
-export PATH="$HOME/.yarn/bin:$PATH"
