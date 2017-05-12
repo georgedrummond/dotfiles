@@ -57,7 +57,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.exports
 source ~/.aliases
-source ~/.tmuxinator/completion.zsh
+source ~/.completion/tmuxinator.zsh
+source ~/.completion/rubydoc.zsh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

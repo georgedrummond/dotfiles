@@ -37,6 +37,7 @@ PrettyOutput() {
     Running "Symlinking all dotfiles with stow"
     stow ack
     stow bash
+    stow completion
     stow git
     stow pow
     stow ruby
