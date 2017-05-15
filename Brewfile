@@ -1,6 +1,7 @@
 brew 'ack'
 # brew 'android-sdk'
 brew 'ant'
+brew 'crystal-lang'
 brew 'elasticsearch'
 brew 'elixir'
 brew 'gmp'
@@ -21,7 +22,6 @@ brew 'tmux'
 brew 'vim'
 brew 'xz'
 brew 'yubikey-personalization'
-
 
 cask '1password'
 cask 'arduino'
