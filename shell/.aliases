@@ -34,6 +34,7 @@ alias eps='mix phoenix.server'
 #
 alias gap='git add -p'
 alias gcm='git commit -m'
+alias gdm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 alias gh='github .'
 alias gho='hub browse'
 alias gnb='git checkout -b'
