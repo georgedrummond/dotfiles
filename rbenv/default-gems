@@ -1,1 +1,4 @@
 bundler
+bundler-audit
+pry
+rubocop
