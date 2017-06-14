@@ -10,6 +10,11 @@ alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resour
 alias rmvim='find ./ -type f -name "\.*sw[klmnop]" -delete'
 
 #
+# Spotlight shortcuts
+#
+alias spotlight_index='sudo mdutil -E /'
+
+#
 # Tmux
 #
 alias tmux='TERM=xterm-256color tmux'
