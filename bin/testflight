@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'json'
+
+ITUNES_CONNECT_PATH = "https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app"
+
+package_json_path = File.join(Dir.pwd, 'package.json')
+package_json = JSON.parse File.read(package_json_path)
+apple_app_id = package_json['apple_app_id']
+
+system 'open', "#{ITUNES_CONNECT_PATH}/#{apple_app_id}/testflight"
