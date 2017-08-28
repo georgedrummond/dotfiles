@@ -91,3 +91,11 @@ PrettyOutput() {
 
     Running "vimrc :PluginInstall"
     vim -c ":PluginInstall!" -c ":qa!" ~/.vimrc
+
+#
+# Set screenshots folder
+#
+    Running "Set screenshots folder"
+    mkdir ~/Desktop/screenshots
+    defaults write com.apple.screencapture location ~/Desktop/screenshots
+    killall SystemUIServer
