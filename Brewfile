@@ -1,5 +1,4 @@
 brew 'ack'
-# brew 'android-sdk'
 brew 'ant'
 brew 'crystal-lang'
 brew 'elasticsearch'
