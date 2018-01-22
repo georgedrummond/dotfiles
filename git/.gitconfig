@@ -5,7 +5,7 @@
 [user]
 	email = georgedrummond@gmail.com
 	name = George Drummond
-	signingkey = D8D158DD
+	# signingkey = D8D158DD
 [push]
 	default = current
 	followTags = true
@@ -30,7 +30,7 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-[gpg]
-	program = gpg2
-[commit]
-	gpgsign = true
+# [gpg]
+# 	program = gpg2
+# [commit]
+# 	gpgsign = false
