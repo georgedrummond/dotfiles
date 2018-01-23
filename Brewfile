@@ -54,4 +54,5 @@ mas "Caffeine", id: 411246225
 mas "Cetus3D", id: 1190841558
 mas "NordVPN", id: 1116599239
 mas "Slack", id: 803453959
+mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
