@@ -23,7 +23,6 @@ brew 'vim'
 brew 'xz'
 brew 'yubikey-personalization'
 
-cask '1password'
 cask 'arduino'
 cask 'atom'
 cask 'caffeine'
@@ -48,3 +47,10 @@ cask 'virtualbox'
 cask 'webtorrent'
 cask 'yubikey-neo-manager'
 cask 'yubikey-personalization-gui'
+
+mas "1Password", id: 443987910
+mas "Caffeine", id: 411246225
+mas "Cetus3D", id: 1190841558
+mas "NordVPN", id: 1116599239
+mas "Slack", id: 803453959
+mas "Xcode", id: 497799835
