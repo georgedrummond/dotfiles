@@ -9,6 +9,13 @@ PrettyOutput() {
 }
 
 #
+# Make sure we have most recent version of the repo
+#
+
+    Running "Updating dotfiles repo"
+    git pull | PrettyOutput
+
+#
 # Install homebrew and dependencies
 #
 
@@ -17,11 +24,19 @@ PrettyOutput() {
       /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
 
+    Running "Update Homebrew and Cask"
+    brew upgrade | PrettyOutput
+    brew cask upgrade | PrettyOutput
+
     Running "Tapping homebrew/bundle"
     brew tap homebrew/bundle | PrettyOutput
 
     Running "Installing Homebrew Packages"
     brew bundle | PrettyOutput
+
+    Running "Cleaning up Homebrew"
+    brew cleanup | PrettyOutput
+    brew cask cleanup | PrettyOutput
 
 #
 # Set default gems for rbenv
