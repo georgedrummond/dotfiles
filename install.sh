@@ -24,19 +24,19 @@ PrettyOutput() {
       /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     fi
 
-    Running "Update Homebrew and Cask"
-    brew upgrade | PrettyOutput
-    brew cask upgrade | PrettyOutput
-
-    Running "Tapping homebrew/bundle"
-    brew tap homebrew/bundle | PrettyOutput
-
-    Running "Installing Homebrew Packages"
-    brew bundle | PrettyOutput
-
-    Running "Cleaning up Homebrew"
-    brew cleanup | PrettyOutput
-    brew cask cleanup | PrettyOutput
+    # Running "Update Homebrew and Cask"
+    # brew upgrade | PrettyOutput
+    # brew cask upgrade | PrettyOutput
+    #
+    # Running "Tapping homebrew/bundle"
+    # brew tap homebrew/bundle | PrettyOutput
+    #
+    # Running "Installing Homebrew Packages"
+    # brew bundle | PrettyOutput
+    #
+    # Running "Cleaning up Homebrew"
+    # brew cleanup | PrettyOutput
+    # brew cask cleanup | PrettyOutput
 
 #
 # Set default gems for rbenv
@@ -53,6 +53,7 @@ PrettyOutput() {
     stow ack
     stow bash
     stow completion
+    stow cron
     stow git
     stow pow
     stow ruby
@@ -121,3 +122,10 @@ PrettyOutput() {
     mkdir -p ~/Desktop/screenshots
     defaults write com.apple.screencapture location ~/Desktop/screenshots
     killall SystemUIServer
+
+#
+# Initiate cron update
+#
+
+    Running "Setting crontab jobs"
+    crontab ~/.cron/jobs.sh
