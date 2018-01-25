@@ -26,7 +26,6 @@ brew 'yubikey-personalization'
 
 cask 'arduino'
 cask 'atom'
-cask 'caffeine'
 cask 'disk-inventory-x'
 cask 'docker'
 cask 'firefox'
@@ -36,7 +35,7 @@ cask 'google-chrome'
 cask 'gpgtools'
 cask 'iterm2'
 cask 'keka'
-cask 'limechat'
+cask 'keybase'
 cask 'rowanj-gitx'
 cask 'sketch'
 cask 'slack'
@@ -51,6 +50,7 @@ cask 'yubikey-personalization-gui'
 mas "1Password", id: 443987910
 mas "Caffeine", id: 411246225
 mas "Cetus3D", id: 1190841558
+mas "LimeChat", id: 414030210
 mas "NordVPN", id: 1116599239
 mas "Slack", id: 803453959
 mas "WhatsApp", id: 1147396723
