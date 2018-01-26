@@ -21,14 +21,11 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mru.vim'
-Plugin 'junegunn/goyo.vim'
-Plugin 'reedes/vim-pencil'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-pasta'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'vim-ruby/vim-ruby'
 Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
@@ -70,6 +67,7 @@ set lazyredraw
 set wildignore+=*/tmp/*,*./git*,*/node_modules/*
 let conceallevel=0
 
+set regexpengine=1 " use new engine
 color dracula
 
 syntax enable
