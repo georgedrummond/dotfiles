@@ -54,20 +54,23 @@ augroup pencil
   autocmd FileType markdown,md call pencil#init({'wrap': 'hard', 'autoformat': 1})
 augroup END
 
-set guifont=Menlo\ Regular:h15
-set laststatus=2
+let conceallevel=0
+set cursorline
 set expandtab
+set fillchars+=vert:\ " comment after to preserve whitespace
+set guifont=Menlo\ Regular:h15
+set hlsearch
+set laststatus=2
+set lazyredraw
+set number
+set regexpengine=1
 set shiftwidth=2
 set softtabstop=2
-set number
-set cursorline
-set fillchars+=vert:\ " comment after to preserve whitespace
-set hlsearch
-set lazyredraw
 set wildignore+=*/tmp/*,*./git*,*/node_modules/*
-let conceallevel=0
 
-set regexpengine=1 " use new engine
+set noballooneval
+let g:netrw_nobeval = 1
+
 color dracula
 
 syntax enable
