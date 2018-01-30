@@ -51,7 +51,8 @@ plugins=(git rails ruby)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/dotfiles/bin:$PATH
-export PATH="$HOME/.yarn/bin:$PATH"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/.yarn/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

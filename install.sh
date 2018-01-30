@@ -63,6 +63,13 @@ PrettyOutput() {
     stow zsh
 
 #
+# Fix nodebrew src path
+#
+
+    Running "Fixing nodebrew build path"
+    mkdir -p ~/.nodebrew/src
+
+#
 # Install oh-my-zsh
 #
 
