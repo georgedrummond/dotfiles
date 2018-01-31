@@ -56,9 +56,9 @@ alias rios='react-native run-ios'
 alias rdroid='react-native run-android'
 
 #
-# Ionic
+# Yarn
 #
-alias is='ionic serve --nobrowser'
+alias ys='yarn run start'
 
 #
 # Work
