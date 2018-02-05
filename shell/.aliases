@@ -8,7 +8,6 @@ alias cdd='cd ~/dotfiles'
 alias cdh='cd ~'
 alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 alias rmvim='find ./ -type f -name "\.*sw[klmnop]" -delete'
-alias weather='curl http://wttr.in/nyc\?m'
 
 #
 # Spotlight shortcuts
