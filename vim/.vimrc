@@ -64,6 +64,8 @@ set shiftwidth=2
 set softtabstop=2
 set wildignore+=*/tmp/*,*./git*,*/node_modules/*
 
+let g:dracula_italic = 0
+
 set noballooneval
 let g:netrw_nobeval = 1
 
