@@ -49,10 +49,6 @@ filetype plugin indent on    " required
 "
 autocmd BufWritePre * :%s/\s\+$//e
 
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,md call pencil#init({'wrap': 'hard', 'autoformat': 1})
-augroup END
 
 let conceallevel=0
 set cursorline
