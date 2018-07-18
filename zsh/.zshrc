@@ -88,5 +88,13 @@ source ~/.completion/rubydoc.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#
+# rbenv
+#
 eval "$(rbenv init -)"
+
+#
+# pyenv
+#
+eval "$(pyenv init -)"
 
