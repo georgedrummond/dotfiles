@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]
 then
-  curl http://wttr.in/nyc\?m
+  curl http://wttr.in/19102\?m
 else
   curl http://wttr.in/$1\?m
 fi
