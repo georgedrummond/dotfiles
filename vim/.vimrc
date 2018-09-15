@@ -21,12 +21,13 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mru.vim'
+Plugin 'prettier/vim-prettier'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sheerun/vim-polyglot'
 Plugin 'sickill/vim-pasta'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -115,6 +115,13 @@ PrettyOutput() {
     vim -c ":PluginInstall!" -c ":qa!" ~/.vimrc
 
 #
+# Install prettier
+#
+
+    Running "npm install -g prettier"
+    npm install -g prettier | PrettyOutput
+
+#
 # Set screenshots folder
 #
     Running "Set screenshots folder"
