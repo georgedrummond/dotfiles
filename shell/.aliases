@@ -44,6 +44,7 @@ alias gx='gitx .'
 alias gho='hub browse'
 alias gnb='git checkout -b'
 alias guc='git reset --soft HEAD~1'
+alias gdabem='git branch | grep -v "master" | xargs git branch -D'
 
 gsq() { git rebase -i HEAD~"$@" }
 
