@@ -38,12 +38,6 @@ PrettyOutput() {
     brew cleanup | PrettyOutput
     brew cask cleanup | PrettyOutput
 
-#
-# Set default gems for rbenv
-#
-
-    Running "Symlinking rbenv/default-gems"
-    ln -sf ~/dotfiles/rbenv/default-gems $(rbenv root)/default-gems
 
 #
 # Symlink all dotfiles
@@ -55,7 +49,6 @@ PrettyOutput() {
     stow completion
     stow git
     stow pow
-    stow ruby
     stow shell
     stow tmux
     stow tmuxinator
