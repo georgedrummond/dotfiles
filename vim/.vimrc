@@ -90,7 +90,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:gitgutter_enabled = 0
 let g:indentLine_color_term = 239
 let g:indentLine_char = '.'
-let g:ctrlp_custom_ignore = 'node_modules\|plugins\|platforms\|www\/lib\|www\/dist\|vim\/bundle\|coverage\|db\/migrate'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
 let mapleader = "\<Space>"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.swp$', 'coverage', 'dist', 'vendor', '\.git$']
