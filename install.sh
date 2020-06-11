@@ -38,45 +38,20 @@ PrettyOutput() {
     brew cleanup | PrettyOutput
     brew cask cleanup | PrettyOutput
 
-#
-# Set default gems for rbenv
-#
-
-    Running "Symlinking rbenv/default-gems"
-    ln -sf ~/dotfiles/rbenv/default-gems $(rbenv root)/default-gems
 
 #
 # Symlink all dotfiles
 #
 
     Running "Symlinking all dotfiles with stow"
-    stow ack
     stow bash
     stow completion
     stow git
-    stow pow
-    stow ruby
     stow shell
     stow tmux
     stow tmuxinator
     stow vim
-    stow zsh
 
-#
-# Fix nodebrew src path
-#
-
-    Running "Fixing nodebrew build path"
-    mkdir -p ~/.nodebrew/src
-
-#
-# Install oh-my-zsh
-#
-
-    Running "Installing oh-my-zsh"
-    if [ ! -e ~/.oh-my-zsh ]; then
-      sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    fi
 
 #
 # Dracula theme for iterm2
@@ -114,12 +89,6 @@ PrettyOutput() {
     Running "vimrc :PluginInstall"
     vim -c ":PluginInstall!" -c ":qa!" ~/.vimrc
 
-#
-# Install prettier
-#
-
-    Running "npm install -g prettier"
-    npm install -g prettier | PrettyOutput
 
 #
 # Set screenshots folder

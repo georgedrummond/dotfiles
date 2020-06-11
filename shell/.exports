@@ -6,17 +6,7 @@
 export EDITOR='vim'
 
 #
-# Ruby
-#
-export RBENV_ROOT=/usr/local/var/rbenv
-
-#
 # Tmux
 #
 export TERM=xterm-256color
 
-#
-# Android
-#
-export ANDROID_HOME=~/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools

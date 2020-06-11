@@ -69,6 +69,7 @@ let g:dracula_italic = 0
 
 set noballooneval
 let g:netrw_nobeval = 1
+let g:vim_markdown_conceal = 0
 
 color dracula
 
