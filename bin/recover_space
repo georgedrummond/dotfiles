@@ -1,4 +1,0 @@
-#!/bin/bash
-
-brew cask cleanup
-brew cleanup
