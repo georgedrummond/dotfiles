@@ -4,10 +4,6 @@ set -e
 
 export EDITOR='code --wait'
 
-ln -s ./git/.gitconfig ~/.gitconfig
-ln -s ./git/.gitignore_global ~/.gitignore_global
-
-
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
-fi
+ln -s $PWD/git/.gitconfig        ~/.gitconfig
+ln -s $PWD/git/.gitignore_global ~/.gitignore_global
+ln -s $PWD/shell/.bash_aliases   ~/.bash_aliases
