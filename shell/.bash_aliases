@@ -7,9 +7,10 @@ alias cdh='cd ~'
 alias g='git'
 alias gap='git add -p'
 alias gcm='git commit -m'
+alias gco='git checkout'
 alias gdabem='git branch | grep -v "master" | xargs git branch -D'
 alias gdm='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
-alias gho='hub browse'
 alias gnb='git checkout -b'
+alias gp='git push'
 alias guc='git reset --soft HEAD~1'
-# gsq() { git rebase -i HEAD~"$@" }
+gsq() { git rebase -i HEAD~"$@" }
